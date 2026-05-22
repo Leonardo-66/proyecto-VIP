@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyecto VIP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-tag">Sistema Personal</div>
+      <div class="logo-title">Proyecto<br><span>VIP</span></div>
+      <div class="logo-sub">Ingeniería en Sistemas</div>
+    </div>
+
+    <div class="sidebar-section-label">Módulos</div>
+
+    <div class="nav-item active" onclick="switchPanel('intro', this)">
+      <span class="nav-num">00</span>
+      <span class="nav-label">Introducción</span>
+      <span class="nav-dot"></span>
+    </div>
+    <div class="nav-item" onclick="switchPanel('fase1', this)">
+      <span class="nav-num">01</span>
+      <span class="nav-label">Misión y Visión</span>
+      <span class="nav-dot"></span>
+    </div>
+    <div class="nav-item" onclick="switchPanel('fase2', this)">
+      <span class="nav-num">02</span>
+      <span class="nav-label">Gestión del Tiempo</span>
+      <span class="nav-dot"></span>
+    </div>
+    <div class="nav-item" onclick="switchPanel('fase3', this)">
+      <span class="nav-num">03</span>
+      <span class="nav-label">Libertad Financiera</span>
+      <span class="nav-dot"></span>
+    </div>
+    <div class="nav-item" onclick="switchPanel('fase4', this)">
+      <span class="nav-num">04</span>
+      <span class="nav-label">Liderazgo</span>
+      <span class="nav-dot"></span>
+    </div>
+    <div class="nav-item" onclick="switchPanel('fase5', this)">
+      <span class="nav-num">05</span>
+      <span class="nav-label">Dominio Propio</span>
+      <span class="nav-dot"></span>
+    </div>
+    <div class="nav-item" onclick="switchPanel('fase6', this)">
+      <span class="nav-num">06</span>
+      <span class="nav-label">Vida Dinámica</span>
+      <span class="nav-dot"></span>
+    </div>
+    <div class="nav-item" onclick="switchPanel('fase7', this)">
+      <span class="nav-num">07</span>
+      <span class="nav-label">Moralidad</span>
+      <span class="nav-dot"></span>
+    </div>
+    <div class="nav-item" onclick="switchPanel('conclusion', this)">
+      <span class="nav-num">08</span>
+      <span class="nav-label">Conclusión</span>
+      <span class="nav-dot"></span>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="progress-label">
+        <span>Progreso del Proyecto</span>
+        <span id="prog-pct">100%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="prog-fill" style="width:100%"></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <div class="breadcrumb">PROYECTO VIP &nbsp;/&nbsp; <span id="bread-current">INTRODUCCIÓN</span></div>
+      <div class="status-badges">
+        <div class="badge badge-gold">VIP</div>
+        <div class="badge badge-cyan">Ing. Sistemas</div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <div id="panel-intro" class="panel active">
+        <div class="section-header">
+          <div class="section-eyebrow">Módulo 00</div>
+          <div class="section-title">Bienvenido al<br><em>Proyecto VIP</em></div>
+        </div>
+
+        <div class="intro-hero">
+          <div class="card-title">Plan Maestro Personal</div>
+          <p class="card-text">
+            El presente Proyecto VIP constituye un plan maestro e intencional diseñado para alinear de forma estructurada mis principios éticos, mis metas y mis acciones diarias durante la carrera de Ingeniería en Sistemas. Lejos de ser un ejercicio puramente teórico, este documento representa la arquitectura lógica bajo la cual optimizaré mi rendimiento académico, mi salud física y mi futura proyección en el mercado tecnológico.
+          </p>
+          <div class="highlight-box">
+            <p>A través de siete fases analíticas, evalúo mi estado conductual actual identificando vulnerabilidades críticas como la procrastinación digital, el gasto reactivo por gratificación instantánea y la falta de un propósito centralizado. Para mitigar estos fallos, implemento soluciones prácticas fundamentadas en principios inmutables como la <strong>eficiencia</strong>, el <strong>dominio propio</strong> y la <strong>integridad absoluta</strong>.</p>
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-bottom:24px">
+          <div class="card">
+            <div class="card-title">Objetivo Central</div>
+            <p class="card-text">Trazar una ruta clara hacia la excelencia y la libertad financiera, asumiendo la responsabilidad total de mis decisiones.</p>
+          </div>
+          <div class="card">
+            <div class="card-title">Fases Analíticas</div>
+            <p class="card-text" style="font-size:28px;font-family:'Syne',sans-serif;font-weight:800;color:var(--gold);margin:4px 0">7</p>
+            <p class="card-text">Fases completas diseñadas para mitigar errores de conducta y potenciar el rendimiento.</p>
+          </div>
+          <div class="card">
+            <div class="card-title">Meta Final</div>
+            <p class="card-text">Consolidarme como un líder técnico y humano capaz de aportar valor estratégico a la sociedad.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-fase1" class="panel">
+        <div class="section-header">
+          <div class="section-eyebrow">Fase I</div>
+          <div class="section-title">Misión, <em>Visión</em><br>y Metas</div>
+        </div>
+
+        <div class="vision-mission-grid" style="margin-bottom:24px">
+          <div class="vm-card vision">
+            <div class="vm-label">Visión</div>
+            <p class="card-text">Consolidarme como un ingeniero líder e íntegro que goza de libertad financiera mediante sistemas de inversión inteligentes y un bienestar integral innegociable; construyendo un legado de excelencia técnica, mental y física en cada área de mi vida.</p>
+          </div>
+          <div class="vm-card mision">
+            <div class="vm-label">Misión</div>
+            <p class="card-text">Optimizar mi rendimiento profesional y académico utilizando mi intuición analítica y madurez laboral para resolver problemas complejos en el sector IT, manteniendo una disciplina física y mental estricta que potencie mi salud y mi valor estratégico en equipos de alta exigencia.</p>
+          </div>
+        </div>
+
+        <div class="card-title" style="padding:0 0 16px; font-size:10px; letter-spacing:0.2em; color:var(--gold); display:flex; align-items:center; gap:8px;">
+          <span style="width:12px; height:1px; background:var(--gold); display:inline-block"></span>
+          METAS POR HORIZONTE TEMPORAL
+        </div>
+        <div class="metas-grid">
+          <div class="meta-card">
+            <div class="meta-timeline">Corto Plazo</div>
+            <div class="meta-period">1 Año</div>
+            <ul class="meta-items">
+              <li>Culminar en limpio el primer año de Universidad.</li>
+              <li>Conseguir un empleo inicial en el área de IT.</li>
+              <li>Dominar de forma autodidacta una herramienta de programación.</li>
+            </ul>
+            <div class="meta-num">01</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-timeline">Mediano Plazo</div>
+            <div class="meta-period">2-3 Años</div>
+            <ul class="meta-items">
+              <li>Asegurar una plaza sólida como Desarrollador Junior.</li>
+              <li>Obtener certificaciones internacionales de peso en IT.</li>
+              <li>Estabilizarme en soporte técnico avanzado.</li>
+            </ul>
+            <div class="meta-num">02</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-timeline">Largo Plazo</div>
+            <div class="meta-period">4-5 Años</div>
+            <ul class="meta-items">
+              <li>Obtener el título de Ingeniería en Sistemas.</li>
+              <li>Iniciar una maestría de alta demanda (IA o Ciencia de Datos).</li>
+              <li>Estructurar un portafolio diversificado de inversión.</li>
+            </ul>
+            <div class="meta-num">03</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-fase2" class="panel">
+        <div class="section-header">
+          <div class="section-eyebrow">Fase II</div>
+          <div class="section-title">Gestión del<br><em>Tiempo</em></div>
+        </div>
+
+        <div class="grid-2" style="margin-bottom:24px">
+          <div class="card" style="border-color:rgba(240,82,82,0.2)">
+            <div class="card-title" style="color:var(--red)">Diagnóstico Actual</div>
+            <p class="card-text">Actualmente, mi gestión del tiempo es reactiva y se ve afectada por la procrastinación en redes sociales. Para ser altamente productivo, aplicaré de forma estricta el principio de <strong>Eficiencia</strong> (hacer las cosas bien desde la primera vez) y la <strong>Autodisciplina</strong>.</p>
+          </div>
+          <div class="card" style="border-color:rgba(52,211,153,0.2)">
+            <div class="card-title" style="color:var(--green)">Plan de Acción</div>
+            <p class="card-text">Implementaré un sistema digital de organización personal por bloques de tiempo (<strong>Time Blocking</strong>). Esto me permitirá optimizar el cumplimiento de tareas universitarias obligatorias de forma rápida y liberar <strong style="color:var(--gold-light)">2 horas diarias</strong> exclusivas para programación autónoma y disciplina física.</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:20px">
+          <div class="card-title">Bloques de Tiempo Diarios — Visualización Semanal</div>
+          <div class="time-block-visual">
+            <div class="tb-day"><div class="tb-day-name">LUN</div><div class="tb-block tb-uni">Univ</div><div class="tb-block tb-code">Code</div><div class="tb-block tb-fis">Fís</div></div>
+            <div class="tb-day"><div class="tb-day-name">MAR</div><div class="tb-block tb-uni">Univ</div><div class="tb-block tb-code">Code</div><div class="tb-block tb-rest">Rest</div></div>
+            <div class="tb-day"><div class="tb-day-name">MIÉ</div><div class="tb-block tb-uni">Univ</div><div class="tb-block tb-code">Code</div><div class="tb-block tb-fis">Fís</div></div>
+            <div class="tb-day"><div class="tb-day-name">JUE</div><div class="tb-block tb-uni">Univ</div><div class="tb-block tb-code">Code</div><div class="tb-block tb-rest">Rest</div></div>
+            <div class="tb-day"><div class="tb-day-name">VIE</div><div class="tb-block tb-uni">Univ</div><div class="tb-block tb-code">Code</div><div class="tb-block tb-fis">Fís</div></div>
+            <div class="tb-day"><div class="tb-day-name">SÁB</div><div class="tb-block tb-code">Code</div><div class="tb-block tb-fis">Fís</div><div class="tb-block tb-rest">Rest</div></div>
+            <div class="tb-day"><div class="tb-day-name">DOM</div><div class="tb-block tb-rest">Plan</div><div class="tb-block tb-rest">Rest</div><div class="tb-block tb-rest">Rest</div></div>
+          </div>
+          <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:8px">
+            <div style="display:flex; align-items:center; gap:6px"><div style="width:10px; height:10px; border-radius:2px; background:rgba(79,195,247,0.4)"></div><span style="font-size:10px; color:var(--text-muted)">Tareas Universitarias</span></div>
+            <div style="display:flex; align-items:center; gap:6px"><div style="width:10px; height:10px; border-radius:2px; background:rgba(201,168,76,0.4)"></div><span style="font-size:10px; color:var(--text-muted)">Programación Autónoma</span></div>
+            <div style="display:flex; align-items:center; gap:6px"><div style="width:10px; height:10px; border-radius:2px; background:rgba(52,211,153,0.3)"></div><span style="font-size:10px; color:var(--text-muted)">Disciplina Física (Gimnasio)</span></div>
+            <div style="display:flex; align-items:center; gap:6px"><div style="width:10px; height:10px; border-radius:2px; background:rgba(255,255,255,0.06)"></div><span style="font-size:10px; color:var(--text-muted)">Descanso / Planificación</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-fase3" class="panel">
+        <div class="section-header">
+          <div class="section-eyebrow">Fase III</div>
+          <div class="section-title">Libertad<br><em>Financiera</em></div>
+        </div>
+
+        <div class="finance-header">
+          <div>
+            <div class="card-title" style="margin-bottom:4px">Balance Mensual</div>
+            <p class="card-text">Transición del modelo de consumo al modelo de optimización.</p>
+          </div>
+          <div class="finance-kpi">
+            <div class="kpi-label">Ingresos Totales</div>
+            <div class="kpi-value green">Q6,000.00</div>
+          </div>
+        </div>
+
+        <div class="renuncia-box">
+          <div class="renuncia-icon">!</div>
+          <div class="renuncia-text">
+            <strong>El Principio de la Renuncia:</strong> Bloqueo intencional y estratégico contra la gratificación instantánea. Renuncio formalmente a la compra impulsiva de dispositivos innecesarios, ropa de marca por estatus o consumo desmedido de comida rápida.
+          </div>
+        </div>
+
+        <div class="budget-compare">
+          <div>
+            <div class="budget-col-title error">Estado Inicial (Ahorro Q0.00)</div>
+            <div class="budget-item">
+              <span class="budget-item-label">Apoyo en el Hogar</span>
+              <div class="budget-item-bar"><div class="budget-item-fill c-hogar" style="width: 33%"></div></div>
+              <span class="budget-item-amount">Q2,000.00</span>
+            </div>
+            <div class="budget-item">
+              <span class="budget-item-label">Transporte y Comida</span>
+              <div class="budget-item-bar"><div class="budget-item-fill c-trans" style="width: 25%"></div></div>
+              <span class="budget-item-amount">Q1,500.00</span>
+            </div>
+            <div class="budget-item">
+              <span class="budget-item-label">Antojos / Salidas</span>
+              <div class="budget-item-bar"><div class="budget-item-fill c-grat" style="width: 21%"></div></div>
+              <span class="budget-item-amount">Q1,300.00</span>
+            </div>
+            <div class="budget-item">
+              <span class="budget-item-label">Universidad</span>
+              <div class="budget-item-bar"><div class="budget-item-fill c-uni" style="width: 20%"></div></div>
+              <span class="budget-item-amount">Q1,200.00</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="budget-col-title optimal">Presupuesto Proyectado Optimizado</div>
+            <div class="budget-item">
+              <span class="budget-item-label">Apoyo en el Hogar</span>
+              <div class="budget-item-bar"><div class="budget-item-fill c-hogar" style="width: 33%"></div></div>
+              <span class="budget-item-amount">Q2,000.00</span>
+            </div>
+            <div class="budget-item">
+              <span class="budget-item-label">Gastos Operativos</span>
+              <div class="budget-item-bar"><div class="budget-item-fill c-ops" style="width: 23%"></div></div>
+              <span class="budget-item-amount">Q1,400.00</span>
+            </div>
+            <div class="budget-item">
+              <span class="budget-item-label">Universidad</span>
+              <div class="budget-item-bar"><div class="budget-item-fill c-uni" style="width: 20%"></div></div>
+              <span class="budget-item-amount">Q1,200.00</span>
+            </div>
+            <div class="budget-item">
+              <span class="budget-item-label">Educación / Salud</span>
+              <div class="budget-item-bar"><div class="budget-item-fill c-edu" style="width: 13%"></div></div>
+              <span class="budget-item-amount">Q800.00</span>
+            </div>
+            <div class="budget-item" style="border-color: rgba(201,168,76,0.3)">
+              <span class="budget-item-label" style="color:var(--gold-light)">Ahorro Inversión (10%)</span>
+              <div class="budget-item-bar"><div class="budget-item-fill c-ahorro" style="width: 10%"></div></div>
+              <span class="budget-item-amount" style="color:var(--gold-light)">Q600.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-fase4" class="panel">
+        <div class="section-header">
+          <div class="section-eyebrow">Fase IV</div>
+          <div class="section-title">Liderazgo<br><em>de Calidad</em></div>
+        </div>
+
+        <div class="leadership-grid">
+          <div class="pillar-card">
+            <div class="pillar-num">01</div>
+            <div class="pillar-icon-label">Principio</div>
+            <div class="pillar-heading">Influencia Positiva</div>
+            <p class="card-text">Como futuro Ingeniero en Sistemas, entiendo que el verdadero valor de un líder tecnológico radica en facilitar el flujo y la experiencia de trabajo de los demás. No se trata de imponer conocimiento, sino de guiar.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-num">02</div>
+            <div class="pillar-icon-label">En la Práctica</div>
+            <div class="pillar-heading">Liderazgo de Servicio</div>
+            <p class="card-text">Me comprometo a resolver activamente los bloqueos de código de mi equipo, guiar con total paciencia y empatía a quienes les cuesta dominar la lógica algorítmica y mantener una postura humilde y accesible en todo momento.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-fase5" class="panel">
+        <div class="section-header">
+          <div class="section-eyebrow">Fase V</div>
+          <div class="section-title">Dominio<br><em>Propio</em></div>
+        </div>
+
+        <div class="dominio-visual">
+          <div class="estado-card antes">
+            <div class="estado-tag">Patrón Reactivo (Bug)</div>
+            <div class="estado-title">Escape Incontrolado</div>
+            <p class="card-text">Uso compulsivo de redes sociales y sesiones de videojuegos largas en momentos inadecuados, utilizándolos como un escape reactivo que alimenta la procrastinación.</p>
+          </div>
+          <div class="estado-card despues">
+            <div class="estado-tag">Patrón Proactivo (Mitigado)</div>
+            <div class="estado-title">Recompensa Regulada</div>
+            <p class="card-text">Aplicación estricta de dominio propio: los videojuegos y las redes sociales quedan relegados al final de la jornada diaria, ejecutándose únicamente como un premio tras validar el 100% de mis deberes académicos y físicos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-fase6" class="panel">
+        <div class="section-header">
+          <div class="section-eyebrow">Fase VI</div>
+          <div class="section-title">Vida<br><em>Dinámica</em></div>
+        </div>
+
+        <div class="vida-stat-row">
+          <div class="stat-block">
+            <div class="stat-block-num">4h</div>
+            <div class="stat-block-label">Mensuales de Servicio</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-block-num">0%</div>
+            <div class="stat-block-label">Costo Comunitario</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-block-num">+1</div>
+            <div class="stat-block-label">Impacto Social</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Responsabilidad Tecnológica y Generosidad</div>
+          <p class="card-text">
+            Una vida exitosa no es egoísta. Dedicaré formalmente 4 horas al mes para brindar tutorías gratuitas de lógica de programación y soporte técnico básico a jóvenes de institutos públicos o de mi comunidad que no tienen la capacidad económica de acceder a educación tecnológica privada. El objetivo es poner mi talento de ingeniería al servicio del entorno, manteniendo una actitud constructiva y de alto impacto humano.
+          </p>
+        </div>
+      </div>
+
+      <div id="panel-fase7" class="panel">
+        <div class="section-header">
+          <div class="section-eyebrow">Fase VII</div>
+          <div class="section-title">Moralidad e<br><em>Integridad</em></div>
+        </div>
+
+        <div class="card" style="margin-bottom: 24px; border-color: rgba(201,168,76,0.2)">
+          <div class="card-title">Firma de Autenticidad Académica y Profesional</div>
+          <p class="card-text" style="font-size:13.5px; line-height: 1.95; color: #fff;">
+            "Como futuro profesional en Ingeniería en Sistemas, entiendo que la tecnología es una herramienta de poder y que tendré acceso a información privilegiada, propiedad intelectual y sistemas críticos. Asumo el compromiso innegociable de basar mi carrera en la integridad absoluta, rechazando por completo el plagio, las soluciones fáciles o el uso deshonesto de herramientas que simulen un conocimiento que no he construido de forma real. En mis desarrollos y entornos laborales, utilizaré únicamente herramientas legítimas y librerías de código abierto respetando rigurosamente sus licencias de autor, descartando el software pirata que vulnera el esfuerzo de otros programadores. Me comprometo a diseñar software transparente y responsable que proteja con total confidencialidad la privacidad de los datos de los usuarios, asegurando con madurez y firmeza que mi crecimiento financiero o el estatus profesional jamás estarán por encima de mis valores éticos ni de la confianza que depositen en mí."
+          </p>
+        </div>
+      </div>
+
+      <div id="panel-conclusion" class="panel">
+        <div class="section-header">
+          <div class="section-eyebrow">Módulo 08</div>
+          <div class="section-title">Arquitectura Final<br><em>Conclusión</em></div>
+        </div>
+
+        <div class="conclusion-hero">
+          <div class="card-title">Cierre del Plan Estratégico</div>
+          <p class="card-text">
+            La realización de este Proyecto VIP me permite concluir que el éxito integral y la trascendencia profesional no son el resultado del azar o de un algoritmo de suerte, sino la consecuencia directa de un diseño de vida planificado y ejecutado con estricta autodisciplina. Al consolidar estas fases, logro mapear de forma nítida mis objetivos, garantizando un equilibrio innegociable entre mis capacidades analíticas en IT, mi salud física y la construcción de un carácter sólido.
+          </p>
+          <p class="card-text" style="margin-top: 14px;">
+            Este ejercicio me desconecta de una postura puramente reactiva ante el entorno y me posiciona como el programador de mi propio destino. Herramientas de optimización como el Time Blocking, el control financiero bajo el principio de la renuncia, el liderazgo de servicio y un firewall ético contra la deshonestidad académica, constituyen las librerías fundamentales para que mi vida no sufra un colapso.
+          </p>
+        </div>
+
+        <div class="card-title" style="padding:10px 0; font-size:10px;">LIBRERÍAS DE CONDUCTA INSTALADAS</div>
+        <div class="libs-grid">
+          <div class="lib-item"><code>Time Blocking</code> Optimización de recursos de tiempo.</div>
+          <div class="lib-item"><code>Principio de Renuncia</code> Mitigación de fugas financieras.</div>
+          <div class="lib-item"><code>Liderazgo de Servicio</code> Soporte técnico y mentoría a terceros.</div>
+          <div class="lib-item"><code>Firewall Ético</code> Cero plagio e integridad absoluta de código.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  function switchPanel(panelId, element) {
+    // Desactivar todos los paneles
+    const panels = document.querySelectorAll('.panel');
+    panels.forEach(p => p.classList.remove('active'));
+    
+    // Activar el seleccionado
+    const targetPanel = document.getElementById('panel-' + panelId);
+    if(targetPanel) targetPanel.classList.add('active');
+    
+    // Cambiar estado de navegación en el Sidebar
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => item.classList.remove('active'));
+    element.classList.add('active');
+    
+    // Actualizar Texto del Breadcrumb superior
+    const breadcrumbCurrent = document.getElementById('bread-current');
+    breadcrumbCurrent.innerText = element.querySelector('.nav-label').innerText;
+    
+    // Desplazar vista hacia arriba de forma fluida
+    document.querySelector('.main').scrollTop = 0;
+  }
+</script>
+</body>
+</html>
