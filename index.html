@@ -1,433 +1,311 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Proyecto VIP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto VIP - Angel Leonardo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="app">
 
-  <aside class="sidebar">
-    <div class="sidebar-logo">
-      <div class="logo-tag">Sistema Personal</div>
-      <div class="logo-title">Proyecto<br><span>VIP</span></div>
-      <div class="logo-sub">Ingeniería en Sistemas</div>
-    </div>
-
-    <div class="sidebar-section-label">Módulos</div>
-
-    <div class="nav-item active" onclick="switchPanel('intro', this)">
-      <span class="nav-num">00</span>
-      <span class="nav-label">Introducción</span>
-      <span class="nav-dot"></span>
-    </div>
-    <div class="nav-item" onclick="switchPanel('fase1', this)">
-      <span class="nav-num">01</span>
-      <span class="nav-label">Misión y Visión</span>
-      <span class="nav-dot"></span>
-    </div>
-    <div class="nav-item" onclick="switchPanel('fase2', this)">
-      <span class="nav-num">02</span>
-      <span class="nav-label">Gestión del Tiempo</span>
-      <span class="nav-dot"></span>
-    </div>
-    <div class="nav-item" onclick="switchPanel('fase3', this)">
-      <span class="nav-num">03</span>
-      <span class="nav-label">Libertad Financiera</span>
-      <span class="nav-dot"></span>
-    </div>
-    <div class="nav-item" onclick="switchPanel('fase4', this)">
-      <span class="nav-num">04</span>
-      <span class="nav-label">Liderazgo</span>
-      <span class="nav-dot"></span>
-    </div>
-    <div class="nav-item" onclick="switchPanel('fase5', this)">
-      <span class="nav-num">05</span>
-      <span class="nav-label">Dominio Propio</span>
-      <span class="nav-dot"></span>
-    </div>
-    <div class="nav-item" onclick="switchPanel('fase6', this)">
-      <span class="nav-num">06</span>
-      <span class="nav-label">Vida Dinámica</span>
-      <span class="nav-dot"></span>
-    </div>
-    <div class="nav-item" onclick="switchPanel('fase7', this)">
-      <span class="nav-num">07</span>
-      <span class="nav-label">Moralidad</span>
-      <span class="nav-dot"></span>
-    </div>
-    <div class="nav-item" onclick="switchPanel('conclusion', this)">
-      <span class="nav-num">08</span>
-      <span class="nav-label">Conclusión</span>
-      <span class="nav-dot"></span>
-    </div>
-
-    <div class="sidebar-footer">
-      <div class="progress-label">
-        <span>Progreso del Proyecto</span>
-        <span id="prog-pct">100%</span>
-      </div>
-      <div class="progress-bar">
-        <div class="progress-fill" id="prog-fill" style="width:100%"></div>
-      </div>
-    </div>
-  </aside>
-
-  <div class="main">
-    <div class="topbar">
-      <div class="breadcrumb">PROYECTO VIP &nbsp;/&nbsp; <span id="bread-current">INTRODUCCIÓN</span></div>
-      <div class="status-badges">
-        <div class="badge badge-gold">VIP</div>
-        <div class="badge badge-cyan">Ing. Sistemas</div>
-      </div>
-    </div>
-
-    <div class="content">
-
-      <div id="panel-intro" class="panel active">
-        <div class="section-header">
-          <div class="section-eyebrow">Módulo 00</div>
-          <div class="section-title">Bienvenido al<br><em>Proyecto VIP</em></div>
-        </div>
-
-        <div class="intro-hero">
-          <div class="card-title">Plan Maestro Personal</div>
-          <p class="card-text">
-            El presente Proyecto VIP constituye un plan maestro e intencional diseñado para alinear de forma estructurada mis principios éticos, mis metas y mis acciones diarias durante la carrera de Ingeniería en Sistemas. Lejos de ser un ejercicio puramente teórico, este documento representa la arquitectura lógica bajo la cual optimizaré mi rendimiento académico, mi salud física y mi futura proyección en el mercado tecnológico.
-          </p>
-          <div class="highlight-box">
-            <p>A través de siete fases analíticas, evalúo mi estado conductual actual identificando vulnerabilidades críticas como la procrastinación digital, el gasto reactivo por gratificación instantánea y la falta de un propósito centralizado. Para mitigar estos fallos, implemento soluciones prácticas fundamentadas en principios inmutables como la <strong>eficiencia</strong>, el <strong>dominio propio</strong> y la <strong>integridad absoluta</strong>.</p>
-          </div>
-        </div>
-
-        <div class="grid-3" style="margin-bottom:24px">
-          <div class="card">
-            <div class="card-title">Objetivo Central</div>
-            <p class="card-text">Trazar una ruta clara hacia la excelencia y la libertad financiera, asumiendo la responsabilidad total de mis decisiones.</p>
-          </div>
-          <div class="card">
-            <div class="card-title">Fases Analíticas</div>
-            <p class="card-text" style="font-size:28px;font-family:'Syne',sans-serif;font-weight:800;color:var(--gold);margin:4px 0">7</p>
-            <p class="card-text">Fases completas diseñadas para mitigar errores de conducta y potenciar el rendimiento.</p>
-          </div>
-          <div class="card">
-            <div class="card-title">Meta Final</div>
-            <p class="card-text">Consolidarme como un líder técnico y humano capaz de aportar valor estratégico a la sociedad.</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="panel-fase1" class="panel">
-        <div class="section-header">
-          <div class="section-eyebrow">Fase I</div>
-          <div class="section-title">Misión, <em>Visión</em><br>y Metas</div>
-        </div>
-
-        <div class="vision-mission-grid" style="margin-bottom:24px">
-          <div class="vm-card vision">
-            <div class="vm-label">Visión</div>
-            <p class="card-text">Consolidarme como un ingeniero líder e íntegro que goza de libertad financiera mediante sistemas de inversión inteligentes y un bienestar integral innegociable; construyendo un legado de excelencia técnica, mental y física en cada área de mi vida.</p>
-          </div>
-          <div class="vm-card mision">
-            <div class="vm-label">Misión</div>
-            <p class="card-text">Optimizar mi rendimiento profesional y académico utilizando mi intuición analítica y madurez laboral para resolver problemas complejos en el sector IT, manteniendo una disciplina física y mental estricta que potencie mi salud y mi valor estratégico en equipos de alta exigencia.</p>
-          </div>
-        </div>
-
-        <div class="card-title" style="padding:0 0 16px; font-size:10px; letter-spacing:0.2em; color:var(--gold); display:flex; align-items:center; gap:8px;">
-          <span style="width:12px; height:1px; background:var(--gold); display:inline-block"></span>
-          METAS POR HORIZONTE TEMPORAL
-        </div>
-        <div class="metas-grid">
-          <div class="meta-card">
-            <div class="meta-timeline">Corto Plazo</div>
-            <div class="meta-period">1 Año</div>
-            <ul class="meta-items">
-              <li>Culminar en limpio el primer año de Universidad.</li>
-              <li>Conseguir un empleo inicial en el área de IT.</li>
-              <li>Dominar de forma autodidacta una herramienta de programación.</li>
-            </ul>
-            <div class="meta-num">01</div>
-          </div>
-          <div class="meta-card">
-            <div class="meta-timeline">Mediano Plazo</div>
-            <div class="meta-period">2-3 Años</div>
-            <ul class="meta-items">
-              <li>Asegurar una plaza sólida como Desarrollador Junior.</li>
-              <li>Obtener certificaciones internacionales de peso en IT.</li>
-              <li>Estabilizarme en soporte técnico avanzado.</li>
-            </ul>
-            <div class="meta-num">02</div>
-          </div>
-          <div class="meta-card">
-            <div class="meta-timeline">Largo Plazo</div>
-            <div class="meta-period">4-5 Años</div>
-            <ul class="meta-items">
-              <li>Obtener el título de Ingeniería en Sistemas.</li>
-              <li>Iniciar una maestría de alta demanda (IA o Ciencia de Datos).</li>
-              <li>Estructurar un portafolio diversificado de inversión.</li>
-            </ul>
-            <div class="meta-num">03</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="panel-fase2" class="panel">
-        <div class="section-header">
-          <div class="section-eyebrow">Fase II</div>
-          <div class="section-title">Gestión del<br><em>Tiempo</em></div>
-        </div>
-
-        <div class="grid-2" style="margin-bottom:24px">
-          <div class="card" style="border-color:rgba(240,82,82,0.2)">
-            <div class="card-title" style="color:var(--red)">Diagnóstico Actual</div>
-            <p class="card-text">Actualmente, mi gestión del tiempo es reactiva y se ve afectada por la procrastinación en redes sociales. Para ser altamente productivo, aplicaré de forma estricta el principio de <strong>Eficiencia</strong> (hacer las cosas bien desde la primera vez) y la <strong>Autodisciplina</strong>.</p>
-          </div>
-          <div class="card" style="border-color:rgba(52,211,153,0.2)">
-            <div class="card-title" style="color:var(--green)">Plan de Acción</div>
-            <p class="card-text">Implementaré un sistema digital de organización personal por bloques de tiempo (<strong>Time Blocking</strong>). Esto me permitirá optimizar el cumplimiento de tareas universitarias obligatorias de forma rápida y liberar <strong style="color:var(--gold-light)">2 horas diarias</strong> exclusivas para programación autónoma y disciplina física.</p>
-          </div>
-        </div>
-
-        <div class="card" style="margin-bottom:20px">
-          <div class="card-title">Bloques de Tiempo Diarios — Visualización Semanal</div>
-          <div class="time-block-visual">
-            <div class="tb-day"><div class="tb-day-name">LUN</div><div class="tb-block tb-uni">Univ</div><div class="tb-block tb-code">Code</div><div class="tb-block tb-fis">Fís</div></div>
-            <div class="tb-day"><div class="tb-day-name">MAR</div><div class="tb-block tb-uni">Univ</div><div class="tb-block tb-code">Code</div><div class="tb-block tb-rest">Rest</div></div>
-            <div class="tb-day"><div class="tb-day-name">MIÉ</div><div class="tb-block tb-uni">Univ</div><div class="tb-block tb-code">Code</div><div class="tb-block tb-fis">Fís</div></div>
-            <div class="tb-day"><div class="tb-day-name">JUE</div><div class="tb-block tb-uni">Univ</div><div class="tb-block tb-code">Code</div><div class="tb-block tb-rest">Rest</div></div>
-            <div class="tb-day"><div class="tb-day-name">VIE</div><div class="tb-block tb-uni">Univ</div><div class="tb-block tb-code">Code</div><div class="tb-block tb-fis">Fís</div></div>
-            <div class="tb-day"><div class="tb-day-name">SÁB</div><div class="tb-block tb-code">Code</div><div class="tb-block tb-fis">Fís</div><div class="tb-block tb-rest">Rest</div></div>
-            <div class="tb-day"><div class="tb-day-name">DOM</div><div class="tb-block tb-rest">Plan</div><div class="tb-block tb-rest">Rest</div><div class="tb-block tb-rest">Rest</div></div>
-          </div>
-          <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:8px">
-            <div style="display:flex; align-items:center; gap:6px"><div style="width:10px; height:10px; border-radius:2px; background:rgba(79,195,247,0.4)"></div><span style="font-size:10px; color:var(--text-muted)">Tareas Universitarias</span></div>
-            <div style="display:flex; align-items:center; gap:6px"><div style="width:10px; height:10px; border-radius:2px; background:rgba(201,168,76,0.4)"></div><span style="font-size:10px; color:var(--text-muted)">Programación Autónoma</span></div>
-            <div style="display:flex; align-items:center; gap:6px"><div style="width:10px; height:10px; border-radius:2px; background:rgba(52,211,153,0.3)"></div><span style="font-size:10px; color:var(--text-muted)">Disciplina Física (Gimnasio)</span></div>
-            <div style="display:flex; align-items:center; gap:6px"><div style="width:10px; height:10px; border-radius:2px; background:rgba(255,255,255,0.06)"></div><span style="font-size:10px; color:var(--text-muted)">Descanso / Planificación</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div id="panel-fase3" class="panel">
-        <div class="section-header">
-          <div class="section-eyebrow">Fase III</div>
-          <div class="section-title">Libertad<br><em>Financiera</em></div>
-        </div>
-
-        <div class="finance-header">
-          <div>
-            <div class="card-title" style="margin-bottom:4px">Balance Mensual</div>
-            <p class="card-text">Transición del modelo de consumo al modelo de optimización.</p>
-          </div>
-          <div class="finance-kpi">
-            <div class="kpi-label">Ingresos Totales</div>
-            <div class="kpi-value green">Q6,000.00</div>
-          </div>
-        </div>
-
-        <div class="renuncia-box">
-          <div class="renuncia-icon">!</div>
-          <div class="renuncia-text">
-            <strong>El Principio de la Renuncia:</strong> Bloqueo intencional y estratégico contra la gratificación instantánea. Renuncio formalmente a la compra impulsiva de dispositivos innecesarios, ropa de marca por estatus o consumo desmedido de comida rápida.
-          </div>
-        </div>
-
-        <div class="budget-compare">
-          <div>
-            <div class="budget-col-title error">Estado Inicial (Ahorro Q0.00)</div>
-            <div class="budget-item">
-              <span class="budget-item-label">Apoyo en el Hogar</span>
-              <div class="budget-item-bar"><div class="budget-item-fill c-hogar" style="width: 33%"></div></div>
-              <span class="budget-item-amount">Q2,000.00</span>
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="brand-section">
+                <span class="sub-brand"><span class="pulse-dot"></span> SYSTEM_ONLINE</span>
+                <h1 class="main-brand">Proyecto <span class="text-red">VIP</span></h1>
+                <span class="brand-career">Ingeniería en Sistemas // v3.0</span>
             </div>
-            <div class="budget-item">
-              <span class="budget-item-label">Transporte y Comida</span>
-              <div class="budget-item-bar"><div class="budget-item-fill c-trans" style="width: 25%"></div></div>
-              <span class="budget-item-amount">Q1,500.00</span>
+
+            <div class="menu-label">NAV_MODULES</div>
+            <nav class="sidebar-menu">
+                <button class="menu-item active" onclick="switchTab(event, 'tab-intro')">
+                    <span class="menu-num">[00]</span> INTRODUCCIÓN
+                </button>
+                <button class="menu-item" onclick="switchTab(event, 'tab-vision')">
+                    <span class="menu-num">[01]</span> MISIÓN Y VISIÓN
+                </button>
+                <button class="menu-item" onclick="switchTab(event, 'tab-principles')">
+                    <span class="menu-num">[02]</span> PRINCIPIOS Y VALORES
+                </button>
+                <button class="menu-item" onclick="switchTab(event, 'tab-areas')">
+                    <span class="menu-num">[03]</span> ÁREAS DE APOYO
+                </button>
+                <button class="menu-item" onclick="switchTab(event, 'tab-foda')">
+                    <span class="menu-num">[04]</span> MATRIZ FODA
+                </button>
+                <button class="menu-item" onclick="switchTab(event, 'tab-roadmap')">
+                    <span class="menu-num">[05]</span> CRONOGRAMA DE HITOS
+                </button>
+                <button class="menu-item" onclick="switchTab(event, 'tab-conclusion')">
+                    <span class="menu-num">[06]</span> CONCLUSIÓN
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="progress-container">
+                    <div class="progress-text">
+                        <span>COMPILATION_PROGRESS</span>
+                        <span class="text-red font-mono">100%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill"></div>
+                    </div>
+                </div>
             </div>
-            <div class="budget-item">
-              <span class="budget-item-label">Antojos / Salidas</span>
-              <div class="budget-item-bar"><div class="budget-item-fill c-grat" style="width: 21%"></div></div>
-              <span class="budget-item-amount">Q1,300.00</span>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-header">
+                <div class="breadcrumb">
+                    <span>ANGEL_SYS</span> <span class="separator">></span> <span class="active-path" id="path-indicator">INTRODUCCIÓN</span>
+                </div>
+                <div class="header-badges">
+                    <span class="badge badge-outline">VIP_ENGINE</span>
+                    <span class="badge badge-filled">PORTALES_B_C1</span>
+                </div>
+            </header>
+
+            <div class="workspace">
+                
+                <div id="tab-intro" class="tab-pane active">
+                    <div class="module-title">// BOOT_SEQUENCE / INTRODUCCIÓN GENERAL</div>
+                    <h2 class="section-heading">Life Architecture Setup</h2>
+
+                    <div class="glass-card">
+                        <div class="card-subtitle">—— SYSTEM_OVERVIEW</div>
+                        <p class="description-text">
+                            El presente Proyecto VIP constituye un plan maestro e intencional diseñado para alinear de forma estructurada mis principios éticos, mis metas y mis acciones diarias durante la carrera de Ingeniería en Sistemas. Lejos de ser un ejercicio puramente teórico, este documento representa la arquitectura lógica bajo la cual optimizaré mi rendimiento académico, mi salud física y mi futura proyección en el mercado tecnológico.
+                        </p>
+
+                        <div class="highlight-block">
+                            A través de fases analíticas guiadas por el programa de Desarrollo Humano y Profesional, evalúo mi estado conductual actual identificando vulnerabilidades críticas para mitigarlas mediante soluciones prácticas fundamentadas en principios inmutables como la eficiencia, el dominio propio y la integridad absoluta.
+                        </div>
+                    </div>
+
+                    <div class="info-grid triple">
+                        <div class="mini-card">
+                            <div class="mini-card-title">—— OBJETIVO CENTRAL</div>
+                            <p class="mini-card-text">Trazar una ruta clara hacia la excelencia académica y la libertad financiera mediante un marco de decisiones conscientes.</p>
+                        </div>
+                        <div class="mini-card">
+                            <div class="mini-card-title">—— ACADEMIC_CORE</div>
+                            <p class="mini-card-text">Universidad Mariano Gálvez de Guatemala • Zona Portales • Primer Ciclo, Sección "B".</p>
+                        </div>
+                        <div class="mini-card">
+                            <div class="mini-card-title">—— DEVELOPER_ID</div>
+                            <p class="mini-card-text white-highlight">Angel Leonardo Guamuche López<br><span class="text-red font-mono text-xs">ID: 9989-26-3230</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-vision" class="tab-pane">
+                    <div class="module-title">// DIRECTIVES / ARQUITECTURA ESTRATÉGICA</div>
+                    <h2 class="section-heading">Core Misión & Visión</h2>
+
+                    <div class="info-grid dual">
+                        <div class="glass-card border-red-subtle">
+                            <div class="card-subtitle"><i class="fa-solid fa-eye"></i> VISION_TARGET (META GLOBAL)</div>
+                            <p class="quote-text">
+                                "Consolidarme como un ingeniero líder e íntegro que goza de libertad financiera mediante sistemas de inversión inteligentes y un bienestar integral innegociable; construyendo un legacy de excelencia técnica, mental y física en cada área de mi vida."
+                            </p>
+                            <div class="indicator-box">
+                                <strong>Objetivo de Visión:</strong> Desarrollar un liderazgo técnico y humano mediante la ingeniería en sistemas, que me permita asegurar estabilidad financiera y equilibrio emocional para impactar positivamente en mi entorno.
+                            </div>
+                        </div>
+
+                        <div class="glass-card border-red-subtle">
+                            <div class="card-subtitle"><i class="fa-solid fa-terminal"></i> MISSION_SCRIPT (MÉTODO DE OPERACIÓN)</div>
+                            <p class="quote-text">
+                                "Optimizar mi rendimiento profesional y académico utilizando mi intuición analítica y madurez laboral para resolver problemas complejos en el sector IT, manteniendo una disciplina física y mental estricta que potencie mi salud y mi valor estratégico en equipos de alta exigencia."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-principles" class="tab-pane">
+                    <div class="module-title">// SECURITY_ETHICS / MARCO DE PROTECCIÓN CONDUCTUAL</div>
+                    <h2 class="section-heading">VIP Principles & Upgrades</h2>
+
+                    <div class="info-grid dual">
+                        <div class="glass-card">
+                            <div class="card-subtitle">—— PRINCIPIOS VIP (SISTEMAS INMUTABLES)</div>
+                            <ul class="custom-list">
+                                <li><span class="list-num">PRN-01</span> <div><strong>Libertad Financiera:</strong> Generar apropiación y capacidad real de ahorro.</div></li>
+                                <li><span class="list-num">PRN-02</span> <div><strong>Trabajo Duro:</strong> Ejecución enfocada sin buscar atajos fáciles.</div></li>
+                                <li><span class="list-num">PRN-03</span> <div><strong>Responsabilidad:</strong> Responder plenamente por cada decisión tomada.</div></li>
+                                <li><span class="list-num">PRN-04</span> <div><strong>Productividad:</strong> Maximizar el rendimiento del tiempo disponible.</div></li>
+                                <li><span class="list-num">PRN-05</span> <div><strong>Integridad:</strong> Comportamiento intachable alineado a la moralidad.</div></li>
+                            </ul>
+                        </div>
+
+                        <div class="glass-card">
+                            <div class="card-subtitle">—— VALORES OPERATIVOS (PASSIVE BUFFS)</div>
+                            <ul class="custom-list">
+                                <li><span class="list-num badge-gray">VAL-01</span> <div><strong>Resiliencia:</strong> Sostener la marcha bajo entornos de alta exigencia.</div></li>
+                                <li><span class="list-num badge-gray">VAL-02</span> <div><strong>Disciplina:</strong> Hacer lo que corresponde por encima del estado de ánimo.</div></li>
+                                <li><span class="list-num badge-gray">VAL-03</span> <div><strong>Paciencia:</strong> Respetar la maduración cronológica de los procesos.</div></li>
+                                <li><span class="list-num badge-gray">VAL-04</span> <div><strong>Compromiso:</strong> Pacto inquebrantable con mis metas a largo plazo.</div></li>
+                                <li><span class="list-num badge-gray">VAL-05</span> <div><strong>Gratitud:</strong> Reconocimiento del camino, de la fe y los mentores.</div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-areas" class="tab-pane">
+                    <div class="module-title">// DEPENDENCY_INJECTION / NODOS DE RED DE SEGURIDAD</div>
+                    <h2 class="section-heading">Sustento & Power Sources</h2>
+                    
+                    <div class="glass-card">
+                        <div class="card-subtitle">—— ÁREAS DE CONTROL INTEGRAL</div>
+                        <p class="description-text mb-20">
+                            Para evitar un fallo sistémico o fatiga crítica, el proyecto se distribuye en pilares fundamentales que sustentan mi crecimiento diario:
+                        </p>
+                        
+                        <div class="info-grid triple">
+                            <div class="sub-border-card">
+                                <h3><i class="fa-solid fa-brain text-red"></i> Intelectual & Laboral</h3>
+                                <p class="small-text">Respaldado por el ecosistema de la UMG y la experiencia laboral previa para acelerar la inserción en vacantes IT competitivas.</p>
+                            </div>
+                            <div class="sub-border-card">
+                                <h3><i class="fa-solid fa-heart text-red"></i> Familiar & Emocional</h3>
+                                <p class="small-text">Soporte y estabilidad de mi círculo cercano que actúa como red de mitigación de estrés en semanas cargadas.</p>
+                            </div>
+                            <div class="sub-border-card">
+                                <h3><i class="fa-solid fa-dumbbell text-red"></i> Física & Espiritual</h3>
+                                <p class="small-text">Entrenamientos de fuerza bien agendados y entrega de planes bajo la soberanía y guía de Dios ("Debemos hacer planes confiando en que Dios nos dirija").</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-foda" class="tab-pane">
+                    <div class="module-title">// RISK_ANALYSIS / REVISIÓN ESTRATÉGICA DE ENTORNO</div>
+                    <h2 class="section-heading">Matriz FODA & Mitigación</h2>
+
+                    <div class="info-grid dual">
+                        <div class="glass-card border-green-subtle">
+                            <div class="card-subtitle text-green">[ASSETS / PUNTOS FUERTES]</div>
+                            <ul class="bullet-list">
+                                <li>Capacidad destacada de aprendizaje autodidacta y enfoque en programación.</li>
+                                <li>Madurez y sólida ética de trabajo desarrollada en experiencias previas.</li>
+                                <li>Resiliencia para tramos largos y claridad absoluta de objetivos vitales.</li>
+                            </ul>
+                        </div>
+
+                        <div class="glass-card border-red-subtle">
+                            <div class="card-subtitle text-red">[BUGS / EXCEPCIONES CRÍTICAS]</div>
+                            <ul class="bullet-list">
+                                <li>Desmotivación repentina ante contenidos puramente teóricos.</li>
+                                <li>Gestión de la fatiga acumulada entre la carga laboral y los estudios.</li>
+                                <li>Distracciones externas o desgaste mental hacia los cierres de ciclo.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="glass-card mt-20">
+                        <div class="card-subtitle">—— MITIGATION_SCRIPTS (PARCHES DE ACCIÓN)</div>
+                        <div class="timeline-logs">
+                            <div class="log-line"><span class="lbl-short">[SHORT-TERM]</span> Dedicar 1-2 horas diarias al estudio autodidacta de código y blindar los entrenamientos de fuerza.</div>
+                            <div class="log-line"><span class="lbl-mid">[MID-TERM]</span> Aprovechar la madurez laboral previa para migrar a plazas técnicas intermedias y crear un fondo de reserva financiero robusto.</div>
+                            <div class="log-line"><span class="lbl-long">[LONG-TERM]</span> Sostener la resiliencia en la recta final de la carrera, abriendo cuentas de inversión avanzadas.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-roadmap" class="tab-pane">
+                    <div class="module-title">// TIMELINE / HITOS DE DESPLIEGUE</div>
+                    <h2 class="section-heading">Release Roadmap & Métricas</h2>
+
+                    <div class="glass-card no-padding">
+                        <table class="premium-table">
+                            <thead>
+                                <tr>
+                                    <th>RELEASE_ID</th>
+                                    <th>ACTIVIDAD DEL CORE / MISIONES</th>
+                                    <th>FASE</th>
+                                    <th>CRITICAL DEADLINE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-mono text-red">MET-01</td>
+                                    <td>Dominar herramientas y stacks modernos de programación de forma libre.</td>
+                                    <td>Corto Plazo</td>
+                                    <td class="font-mono label-deadline">DICIEMBRE 2026</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-mono text-red">MET-02</td>
+                                    <td>Culminar e ingresar limpio al segundo año de Ingeniería en Sistemas.</td>
+                                    <td>Corto Plazo</td>
+                                    <td class="font-mono label-deadline">DICIEMBRE 2026</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-mono text-red">MET-03</td>
+                                    <td>Migración y estabilización formal en un empleo del sector IT.</td>
+                                    <td>Mediano Plazo</td>
+                                    <td class="font-mono label-deadline">ENERO 2028</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-mono text-red">MET-04</td>
+                                    <td>Consolidación del fondo de reserva estratégico para apalancamiento.</td>
+                                    <td>Mediano Plazo</td>
+                                    <td class="font-mono label-deadline">JUNIO 2028</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-mono text-red">MET-05</td>
+                                    <td>Graduación y obtención del título oficial de Ingeniería en Sistemas.</td>
+                                    <td>Largo Plazo</td>
+                                    <td class="font-mono label-deadline text-red font-bold">AGOSTO 2031</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="tab-conclusion" class="tab-pane">
+                    <div class="module-title">// EVALUATION / CONCLUSIÓN INTEGRAL</div>
+                    <h2 class="section-heading">Dev Review & Growth</h2>
+
+                    <div class="glass-card reflection-card">
+                        <div class="card-subtitle text-red">—— INSTRUCTION_COMPILATION_SUCCESS</div>
+                        <p class="reflection-text">
+                            "Gracias a este proyecto VIP he aprendido que el éxito no es un evento de suerte, sino un algoritmo de decisiones diarias basadas en principios inmutables como la moralidad. Cada día me sumerjo más en querer lograr todo lo propuesto dentro de este proyecto; estoy siendo más disciplinado, honesto y responsable conmigo mismo y eso me hace sentirme bien más allá de lo que quiero lograr. Disfruto el proceso y, conociendo mi capacidad real, me ha ayudado a dejar de ser tan pesimista conmigo mismo."
+                        </p>
+                        <div class="script-footer font-mono">
+                            <span>SOURCE: PORTAFOLIO_VIP_ANGEL.LOG</span>
+                            <span class="text-red">"Debemos hacer planes confiando en que Dios nos dirija" — Prov. 16:9</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="budget-item">
-              <span class="budget-item-label">Universidad</span>
-              <div class="budget-item-bar"><div class="budget-item-fill c-uni" style="width: 20%"></div></div>
-              <span class="budget-item-amount">Q1,200.00</span>
-            </div>
-          </div>
-
-          <div>
-            <div class="budget-col-title optimal">Presupuesto Proyectado Optimizado</div>
-            <div class="budget-item">
-              <span class="budget-item-label">Apoyo en el Hogar</span>
-              <div class="budget-item-bar"><div class="budget-item-fill c-hogar" style="width: 33%"></div></div>
-              <span class="budget-item-amount">Q2,000.00</span>
-            </div>
-            <div class="budget-item">
-              <span class="budget-item-label">Gastos Operativos</span>
-              <div class="budget-item-bar"><div class="budget-item-fill c-ops" style="width: 23%"></div></div>
-              <span class="budget-item-amount">Q1,400.00</span>
-            </div>
-            <div class="budget-item">
-              <span class="budget-item-label">Universidad</span>
-              <div class="budget-item-bar"><div class="budget-item-fill c-uni" style="width: 20%"></div></div>
-              <span class="budget-item-amount">Q1,200.00</span>
-            </div>
-            <div class="budget-item">
-              <span class="budget-item-label">Educación / Salud</span>
-              <div class="budget-item-bar"><div class="budget-item-fill c-edu" style="width: 13%"></div></div>
-              <span class="budget-item-amount">Q800.00</span>
-            </div>
-            <div class="budget-item" style="border-color: rgba(201,168,76,0.3)">
-              <span class="budget-item-label" style="color:var(--gold-light)">Ahorro Inversión (10%)</span>
-              <div class="budget-item-bar"><div class="budget-item-fill c-ahorro" style="width: 10%"></div></div>
-              <span class="budget-item-amount" style="color:var(--gold-light)">Q600.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="panel-fase4" class="panel">
-        <div class="section-header">
-          <div class="section-eyebrow">Fase IV</div>
-          <div class="section-title">Liderazgo<br><em>de Calidad</em></div>
-        </div>
-
-        <div class="leadership-grid">
-          <div class="pillar-card">
-            <div class="pillar-num">01</div>
-            <div class="pillar-icon-label">Principio</div>
-            <div class="pillar-heading">Influencia Positiva</div>
-            <p class="card-text">Como futuro Ingeniero en Sistemas, entiendo que el verdadero valor de un líder tecnológico radica en facilitar el flujo y la experiencia de trabajo de los demás. No se trata de imponer conocimiento, sino de guiar.</p>
-          </div>
-          <div class="pillar-card">
-            <div class="pillar-num">02</div>
-            <div class="pillar-icon-label">En la Práctica</div>
-            <div class="pillar-heading">Liderazgo de Servicio</div>
-            <p class="card-text">Me comprometo a resolver activamente los bloqueos de código de mi equipo, guiar con total paciencia y empatía a quienes les cuesta dominar la lógica algorítmica y mantener una postura humilde y accesible en todo momento.</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="panel-fase5" class="panel">
-        <div class="section-header">
-          <div class="section-eyebrow">Fase V</div>
-          <div class="section-title">Dominio<br><em>Propio</em></div>
-        </div>
-
-        <div class="dominio-visual">
-          <div class="estado-card antes">
-            <div class="estado-tag">Patrón Reactivo (Bug)</div>
-            <div class="estado-title">Escape Incontrolado</div>
-            <p class="card-text">Uso compulsivo de redes sociales y sesiones de videojuegos largas en momentos inadecuados, utilizándolos como un escape reactivo que alimenta la procrastinación.</p>
-          </div>
-          <div class="estado-card despues">
-            <div class="estado-tag">Patrón Proactivo (Mitigado)</div>
-            <div class="estado-title">Recompensa Regulada</div>
-            <p class="card-text">Aplicación estricta de dominio propio: los videojuegos y las redes sociales quedan relegados al final de la jornada diaria, ejecutándose únicamente como un premio tras validar el 100% de mis deberes académicos y físicos.</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="panel-fase6" class="panel">
-        <div class="section-header">
-          <div class="section-eyebrow">Fase VI</div>
-          <div class="section-title">Vida<br><em>Dinámica</em></div>
-        </div>
-
-        <div class="vida-stat-row">
-          <div class="stat-block">
-            <div class="stat-block-num">4h</div>
-            <div class="stat-block-label">Mensuales de Servicio</div>
-          </div>
-          <div class="stat-block">
-            <div class="stat-block-num">0%</div>
-            <div class="stat-block-label">Costo Comunitario</div>
-          </div>
-          <div class="stat-block">
-            <div class="stat-block-num">+1</div>
-            <div class="stat-block-label">Impacto Social</div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-title">Responsabilidad Tecnológica y Generosidad</div>
-          <p class="card-text">
-            Una vida exitosa no es egoísta. Dedicaré formalmente 4 horas al mes para brindar tutorías gratuitas de lógica de programación y soporte técnico básico a jóvenes de institutos públicos o de mi comunidad que no tienen la capacidad económica de acceder a educación tecnológica privada. El objetivo es poner mi talento de ingeniería al servicio del entorno, manteniendo una actitud constructiva y de alto impacto humano.
-          </p>
-        </div>
-      </div>
-
-      <div id="panel-fase7" class="panel">
-        <div class="section-header">
-          <div class="section-eyebrow">Fase VII</div>
-          <div class="section-title">Moralidad e<br><em>Integridad</em></div>
-        </div>
-
-        <div class="card" style="margin-bottom: 24px; border-color: rgba(201,168,76,0.2)">
-          <div class="card-title">Firma de Autenticidad Académica y Profesional</div>
-          <p class="card-text" style="font-size:13.5px; line-height: 1.95; color: #fff;">
-            "Como futuro profesional en Ingeniería en Sistemas, entiendo que la tecnología es una herramienta de poder y que tendré acceso a información privilegiada, propiedad intelectual y sistemas críticos. Asumo el compromiso innegociable de basar mi carrera en la integridad absoluta, rechazando por completo el plagio, las soluciones fáciles o el uso deshonesto de herramientas que simulen un conocimiento que no he construido de forma real. En mis desarrollos y entornos laborales, utilizaré únicamente herramientas legítimas y librerías de código abierto respetando rigurosamente sus licencias de autor, descartando el software pirata que vulnera el esfuerzo de otros programadores. Me comprometo a diseñar software transparente y responsable que proteja con total confidencialidad la privacidad de los datos de los usuarios, asegurando con madurez y firmeza que mi crecimiento financiero o el estatus profesional jamás estarán por encima de mis valores éticos ni de la confianza que depositen en mí."
-          </p>
-        </div>
-      </div>
-
-      <div id="panel-conclusion" class="panel">
-        <div class="section-header">
-          <div class="section-eyebrow">Módulo 08</div>
-          <div class="section-title">Arquitectura Final<br><em>Conclusión</em></div>
-        </div>
-
-        <div class="conclusion-hero">
-          <div class="card-title">Cierre del Plan Estratégico</div>
-          <p class="card-text">
-            La realización de este Proyecto VIP me permite concluir que el éxito integral y la trascendencia profesional no son el resultado del azar o de un algoritmo de suerte, sino la consecuencia directa de un diseño de vida planificado y ejecutado con estricta autodisciplina. Al consolidar estas fases, logro mapear de forma nítida mis objetivos, garantizando un equilibrio innegociable entre mis capacidades analíticas en IT, mi salud física y la construcción de un carácter sólido.
-          </p>
-          <p class="card-text" style="margin-top: 14px;">
-            Este ejercicio me desconecta de una postura puramente reactiva ante el entorno y me posiciona como el programador de mi propio destino. Herramientas de optimización como el Time Blocking, el control financiero bajo el principio de la renuncia, el liderazgo de servicio y un firewall ético contra la deshonestidad académica, constituyen las librerías fundamentales para que mi vida no sufra un colapso.
-          </p>
-        </div>
-
-        <div class="card-title" style="padding:10px 0; font-size:10px;">LIBRERÍAS DE CONDUCTA INSTALADAS</div>
-        <div class="libs-grid">
-          <div class="lib-item"><code>Time Blocking</code> Optimización de recursos de tiempo.</div>
-          <div class="lib-item"><code>Principio de Renuncia</code> Mitigación de fugas financieras.</div>
-          <div class="lib-item"><code>Liderazgo de Servicio</code> Soporte técnico y mentoría a terceros.</div>
-          <div class="lib-item"><code>Firewall Ético</code> Cero plagio e integridad absoluta de código.</div>
-        </div>
-      </div>
-
+        </main>
     </div>
-  </div>
-</div>
 
-<script>
-  function switchPanel(panelId, element) {
-    // Desactivar todos los paneles
-    const panels = document.querySelectorAll('.panel');
-    panels.forEach(p => p.classList.remove('active'));
-    
-    // Activar el seleccionado
-    const targetPanel = document.getElementById('panel-' + panelId);
-    if(targetPanel) targetPanel.classList.add('active');
-    
-    // Cambiar estado de navegación en el Sidebar
-    const navItems = document.querySelectorAll('.nav-item');
-    navItems.forEach(item => item.classList.remove('active'));
-    element.classList.add('active');
-    
-    // Actualizar Texto del Breadcrumb superior
-    const breadcrumbCurrent = document.getElementById('bread-current');
-    breadcrumbCurrent.innerText = element.querySelector('.nav-label').innerText;
-    
-    // Desplazar vista hacia arriba de forma fluida
-    document.querySelector('.main').scrollTop = 0;
-  }
-</script>
+    <script>
+        function switchTab(event, tabId) {
+            // Ocultar paneles activos
+            const panes = document.querySelectorAll('.tab-pane');
+            panes.forEach(pane => pane.classList.remove('active'));
+
+            // Quitar clase activa a botones
+            const menuItems = document.querySelectorAll('.menu-item');
+            menuItems.forEach(item => item.classList.remove('active'));
+
+            // Activar el panel y botón correspondientes
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+
+            // Actualizar dinámicamente la miga de pan superior omitiendo códigos de corchetes
+            const pathText = event.currentTarget.innerText.replace(/\[\d+\]/g, '').trim();
+            document.getElementById('path-indicator').innerText = pathText;
+        }
+    </script>
 </body>
 </html>
